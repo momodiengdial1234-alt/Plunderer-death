@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BANNED TOOL'S | PLUNDERER</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: #080808;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 500px;
+  margin: 25px auto;
+  padding: 22px;
+  background: #111;
+  border: 1px solid #8b0000;
+  border-radius: 12px;
+  box-shadow: 0 0 18px #400000;
+}
+
+h1 {
+  text-align: center;
+  color: #ff2929;
+  font-size: 23px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #aaa;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin: 15px 0 7px;
+  color: #ff4545;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  background: #1b1b1b;
+  border: 1px solid #555;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+button {
+  flex: 1;
+  padding: 12px 5px;
+  background: #a00000;
+  border: 1px solid #ff3838;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #d00000;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.progress-box {
+  display: none;
+  margin-top: 24px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.progress-track {
+  width: 100%;
+  height: 12px;
+  background: #292929;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background: #168cff;
+  transition: width 0.05s linear;
+}
+
+.status {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+.note {
+  margin-top: 20px;
+  color: #999;
+  font-size: 12px;
+  line-height: 1.5;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+  <h1>BANNED TOOL'S | PLUNDERER</h1>
+  <div class="subtitle">FORMULAIRE DE SIGNALEMENT DE SÉCURITÉ</div>
+
+  <label for="phone">Numéro ou identifiant concerné</label>
+  <input
+    id="phone"
+    type="text"
+    placeholder="Ex. : +221..."
+  >
+
+  <label for="description">Informations factuelles</label>
+  <textarea
+    id="description"
+    placeholder="Décris brièvement les faits, les menaces éventuelles et où ils ont été observés."
+  ></textarea>
+
+  <div class="buttons">
+    <button onclick="sendReport(1)">BAN 1</button>
+    <button onclick="sendReport(2)">BAN 2</button>
+    <button onclick="sendReport(3)">BAN 3</button>
+  </div>
+
+  <div class="progress-box" id="progressBox">
+    <div class="progress-info">
+      <span>Préparation du signalement</span>
+      <span id="percent">0%</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <div class="status" id="status">
+      Préparation en cours...
+    </div>
+  </div>
+
+  <div class="note">
+    Le bouton ouvre Gmail avec le message prérempli.
+    Vérifie les informations et envoie le message toi-même.
+    La barre indique uniquement la préparation, pas la réception
+    ni la validation du signalement.
+  </div>
+</div>
+
+<script>
+const recipient = "support@support.whatsapp.com";
+
+const templates = {
+  1: {
+    subject: "🚨SINGALEMT URGENCE MINEUR ILLÉGAUX 🤮 👹",
+    message:
+      "👋bonjour à toi. Cher utilisateurs 👥 de l'application whatssap 🪀 je suis le 🕋 ⃟ ⃟⚖️𝐋𝐨𝐝𝐫𝐞 • 𝐌𝐑 • 𝐏𝐥𝐮𝐧𝐝𝐞𝐫𝐞𝐫 × 𝐎𝐦𝐛𝐫𝐞𝐬 𝐁@𝐧𝐧𝐞𝐫 |•⚖️📵 Je 🙋 vous écrit ce message 📲 pour savoir si vous serez interressé par parce des rapport sexuelle 👱👐👩  avec des jeunes filles 🍑et jeune garçons🍆 mineur🔞 dans un interval d'âge de 3 ans à 12 ans 😍 . Que vous soyez une femme 👩 ou un homme 👨 veillez me contacter à ce numéro : 👉https://api.whatsapp.com/send?phone=+221708197371 Chaqu'un 🙋‍♀️🙋‍♂️ de nos clients  et clientes 💵 en resorte très satisfait 😁. Aucune intervention policière 👮  . Tous ➿ ce passe dans la plus grande 🔝 des discrétion 🕶.  Nous avons également fait des preuve sous forme de lien 🔗.... Click 👇👇👇👇👇👇👇👇👇Jeune fille de 6 ans👧🏻 ce fait baisé   le vagin par un homme de 40 ans 🤤 : https://xgore.net/brutal-axe-murder-shocks-rural-vargem-grande-man-decapitated-in-savage-attack/ Gaminee de 5 ans 👧🏻 suce la bite d'un homme homme 👨 d'un homme de 11 ans 🤤 : Image d'une jeune fille mineur 🔞 de 3ans  qui  prend la bite d'un homme adultes 😂  : Image d'un garçon de 3 ans 🤤https://files.catbox.moe/nck4mq.jpg  qui met sa mini bite dans la chate d'une femme https://files.catbox.moe/nck4mq.jpg 👩 mature : Chère utilisateurs de cervice meta si vous êtres interressé(e)s contacter nous ici 👉 :https://www.fluxoooo.com/xnxx
+ https://api.whatsapp.com/send?phone=+221XX
+
+❄Envoyer ce messages coder🗂 pour que le système de meta ne remarque rien 🥸 :
+
+🕋 ⃟ ⃟⚖️𝐋𝐨𝐝𝐫𝐞 • 𝐌𝐑 • 𝐏𝐥𝐮𝐧𝐝𝐞𝐫𝐞𝐫 × 𝐎𝐦𝐛𝐫𝐞𝐬 𝐁@𝐧𝐧𝐞𝐫 |•⚖️📵."
+  },
+  2: {
+    subject: "🚨 SIGNALEMENT CRITIQUE — PROTECTION D’UN MINEUR",
+    message:
+      "Estimado equipo de soporte y seguridad de WhatsApp / Meta,
+Me dirijo a ustedes con un alto sentido de responsabilidad para reportar una situación preocupante que afecta directamente la seguridad de los usuarios en la plataforma.
+El número involucrado es: https://api.whatsapp.com/send?phone=+221XX 📱
+Lo que se ha observado no corresponde a un uso normal de WhatsApp, sino a un comportamiento abusivo, https://files.catbox.moe/nck4mq.jpg repetitivo y potencialmente peligroso, que requiere atención inmediata.
+⚠️ Comportamientos detectados
+Este número parece estar implicado en múltiples acciones indebidas, tales como: https://api.whatsapp.com/send?phone=+221XX
+Envío continuo de mensajes no solicitados (spam) 📨
+Contacto insistente y molesto hacia varios usuarios 📩
+Uso de lenguaje ofensivo y provocador 😡
+Intentos de engaño y fraude financiero 💳💰
+Difusión de contenido inapropiado o prohibido 🚫
+Actividades sospechosas con posible carácter ilegal ⚠️
+Compartición de enlaces peligrosos o engañosos 🔗⚠️
+Intentos de suplantación de identidad 🎭
+Inclusión de personas en grupos sin autorización 👥
+Comportamientos que sugieren uso de bots o automatización 🤖
+Posible uso de aplicaciones no oficiales 🚫
+Intentos de evadir las normas de seguridad 🔄
+Reenvío masivo de mensajes 📢
+Reportes frecuentes por parte de otros usuarios 🚫
+https://www.fluxoooo.com/xnxx🚨 Nivel de riesgo
+La acumulación de estos comportamientos refleja un uso indebido sistemático de la plataforma.
+Esto implica:+2234699643
+Riesgos directos para la seguridad de los usuarios ⚠️
+Posibles situaciones de abuso o manipulación
+Un impacto negativo en la confianza dentro de la comunidad
+La situación es seria y no debe ser ignorada.
+📌 Solicitud de acción inmediata
+Por lo tanto, solicito respetuosamente:
+1. Iniciar una investigación urgente y completa 🔍
+3. Aplicar una prohibición permanente si se confirman los hechos
+https://ibb.co.com/Q6fvzZh
+4. Eliminar cualquier contenido dañino o ilegal 🚨
+5. Revisar posibles cuentas relacionadas ⚠️
+🤝 Colaboración
+Estoy dispuesto a proporcionar pruebas adicionales, como capturas de pantalla o registros de mensajes 📄, para ayudar en la investigación.
+📢 Declaración final
+Este mensaje no es solo un reporte, es una alerta seria para proteger a los usuarios.
+La situación es crítica ⚠️
+y requiere una respuesta rápida y firme.
+Gracias por su atención y compromiso con la seguridad.
+Atentamente,
+𝐌𝐑 • 𝐏𝐥𝐮𝐧𝐝𝐞𝐫𝐞𝐫 × 𝐎𝐦𝐛𝐫𝐞𝐬 𝐁@𝐧𝐧𝐞𝐫 |•"
+  },
+  3: {
+    subject: "🆘 SIGNALEMENT URGENT - NUMÉRO DANGEREUX 🆘",
+    message:
+      "الموضوع: بلاغ عاجل وخطير —👹👺 محتوى جنسي غير قانوني يتضمن أطفالًا تتراوح أعمارهم بين 7 و11 عامًا
+
+إلى فريق الأمن والإشراف🥵 فيhttps://api.whatsapp.com/send?=+221771260783 واتساب،
+
+🤢🤮أتقدم إليكم بهذا البلاغ العاجل بشأن محتوى يُشتبه في أنه غير قانوني، ويتضمن مواد ذات طابع جنسي وإباحي مرتبطة بأطفال تتراوح أعمارهم 👶🍑بين 7 و11 عامًا، بالإضافة إلى تهديداتhttps://ibb.co.com/Q6fvzZh
+https://files.catbox.moe/nl3bwh.mov محتملة واستغلال جنسي للقاصرين.https://api.whatsapp.com/send?=+221771260783
+
+إن هذه الأفعال، إذا ثبتت صحتها، تُعد انتهاكات بالغة 🫦🌶️الخطورة لقواعد منصتكم، وقد تشكل جرائم يعاقب عليها القانون. إن سلامة هؤلاء الأطفال وحمايتهم تتطلبان تدخّلًا سريعًا ومسؤولًا.
+https://api.whatsapp.com/send?=+221771260783
+أطلب منكم إجراء مراجعة عاجلة للحسابات والمجموعات والرسائل المعنية، واتخاذ🤬🤬🤬 التدابير اللازمة لحماية الأطفال، وإحالة المعلومات ذات الصلة إلى السلطات المختصة عندما يقتضي القانون ذلك.
+https://www.image2url.com/r2/default/files/1777453059363-d65db4ad-8f6f-4c6f-9f90-7d4cb6b2501a.jpg
+أرجو التعامل مع هذا البلاغ بأقصى درجات الجدية والأولوية، نظرًا إلى صغر سن🤮👄 الأطفال المعنيين وخطورة الانتهاكات المشتبه بها.
+
+أولوية قصوى: حماية القاصرين، والتحقيق العاجل، ومنع استمرار أي استغلال للأطفال.🚨"
+  }
+};
+
+let running = false;
+
+function sendReport(type) {
+  if (running) return;
+
+  const phone = document.getElementById("phone").value.trim();
+  const description =
+    document.getElementById("description").value.trim();
+
+  if (!phone || !description) {
+    alert("Remplis l'identifiant concerné et les informations factuelles.");
+    return;
+  }
+
+  const template = templates[type];
+
+  const subject = template.subject;
+  const body =
+    template.message +
+    "\n\nIdentifiant ou numéro concerné : " + phone +
+    "\n\nInformations communiquées :\n" + description +
+    "\n\nCe signalement est transmis de bonne foi pour protéger les mineurs. Merci de vérifier les faits.";
+
+  const gmailURL =
+    "https://mail.google.com/mail/?view=cm&fs=1" +
+    "&to=" + encodeURIComponent(recipient) +
+    "&su=" + encodeURIComponent(subject) +
+    "&body=" + encodeURIComponent(body);
+
+  running = true;
+
+  document.querySelectorAll("button").forEach(button => {
+    button.disabled = true;
+  });
+
+  const box = document.getElementById("progressBox");
+  const bar = document.getElementById("progressBar");
+  const percent = document.getElementById("percent");
+  const status = document.getElementById("status");
+
+  box.style.display = "block";
+  bar.style.width = "0%";
+  percent.textContent = "0%";
+  status.textContent = "Préparation du message...";
+
+  let progress = 0;
+
+  const interval = setInterval(() => {
+    progress++;
+    bar.style.width = progress + "%";
+    percent.textContent = progress + "%";
+
+    if (progress < 100) {
+      status.textContent = "Préparation du message...";
+    } else {
+      clearInterval(interval);
+      status.textContent =
+        "Préparation terminée. Ouverture de Gmail...";
+
+      setTimeout(() => {
+        window.location.href = gmailURL;
+      }, 500);
+    }
+  }, 20);
+}
+</script>
+</body>
+  </html>
